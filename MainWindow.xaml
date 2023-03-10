@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="TB2" HorizontalAlignment="Left" Margin="354,243,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox x:Name="TB1" HorizontalAlignment="Left" Margin="354,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TB1_TextChanged"/>
+        <TextBox x:Name="TextBox2"  HorizontalAlignment="Left" Margin="104,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="104,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox1_TextChanged" Text="Text" KeyDown="TextBox1_keyDown"/>
+        <Label x:Name="Label" Content="Label" HorizontalAlignment="Left" Margin="104,257,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontSize="14"/>
 
     </Grid>
 </Window>

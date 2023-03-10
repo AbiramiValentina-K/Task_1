@@ -25,13 +25,29 @@ namespace Task_1
             InitializeComponent();
         }
 
-        private void TB1_TextChanged(object sender, TextChangedEventArgs e)
+        private void TextBox1_TextChanged(object sender, TextChangedEventArgs e)
         {
-            String a = TB1.Text;
+            String a = TextBox1.Text;
             char[] atochar = a.ToCharArray();
             Array.Reverse(atochar);
             String rev = new string(atochar);
-            TB2.Text = rev;
+            TextBox2.Text = rev;
         }
+
+        private void TextBox1_keyDown(object sender, KeyEventArgs e)
+        {
+            Label.Content = e.Key;
+
+        }
+
+        //public void TextBox1_keyDown(object sender, KeyEventArgs e)
+        //{
+        //    Label.Content = e.KeyboardDevice;
+
+        //}
+        //private void TextBox1_keyDown(object sender, KeyEventArgs f)
+        //{
+        //    Label.Content = $"Key pressed: {f.KeyboardDevice}";
+        //}
     }
 }
